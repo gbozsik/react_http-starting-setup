@@ -3,14 +3,15 @@ import { BrowserRouter } from 'react-router-dom'
 
 import Blog from './containers/Blog/Blog';
 
-class App extends Component {
+export class App extends Component {
   render() {
     return (
+      // <BrowserRouter basename='my-app'>
       <BrowserRouter>
         <div className="App">
           <Blog />
         </div>
-      </BrowserRouter>
+     </BrowserRouter>
     );
   }
 }
